@@ -1,59 +1,125 @@
-# Memos - Open Source, Self-hosted, Your Notes, Your Way
+# Memos 📓
 
-<img align="right" height="96px" src="https://www.usememos.com/logo-rounded.png" alt="Memos" />
+![Memos](https://img.shields.io/badge/version-latest-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-An open-source, self-hosted note-taking solution designed for seamless deployment and multi-platform access. Experience effortless plain text writing with pain-free, complemented by robust Markdown syntax support for enhanced formatting.
+Welcome to the Memos repository! Memos is an open-source, lightweight note-taking solution designed to help you create meaningful notes effortlessly. With Memos, you can take control of your notes in a way that suits you best. 
 
-<a href="https://www.usememos.com">Home Page</a> •
-<a href="https://www.usememos.com/blog">Blogs</a> •
-<a href="https://www.usememos.com/docs">Docs</a> •
-<a href="https://demo.usememos.com/">Live Demo</a>
+## Table of Contents
 
-<p>
-  <a href="https://deepwiki.com/usememos/memos"><img src="https://devin.ai/assets/deepwiki-badge.png" alt="Ask DeepWiki" height="20"/></a>
-  <a href="https://hub.docker.com/r/neosmemo/memos"><img alt="Docker pull" src="https://img.shields.io/docker/pulls/neosmemo/memos.svg"/></a>
-  <a href="https://hub.docker.com/r/neosmemo/memos"><img alt="Docker image size" src="https://img.shields.io/docker/image-size/neosmemo/memos?sort=semver"/></a>
-  <a href="https://discord.gg/tfPJa4UmAv"><img alt="Discord" src="https://img.shields.io/badge/discord-chat-5865f2?logo=discord&logoColor=f5f5f5" /></a>
-</p>
-
-![demo](https://www.usememos.com/demo.png)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Links](#links)
 
 ## Features
 
-- **Privacy First** 🏡: Your data, your control. All runtime data is securely stored in your local database.
-- **Create at Speed** ✍️: Write and save content as plain text for quick access, with Markdown support for fast formatting and easy sharing.
-- **Lightweight but Powerful** ⚡: Built with Go and React.js, our app combines a compact architecture with powerful performance.
-- **Customizable** 🧩: Personalize your experience by customizing the server name, icon, description, theme, and execution scripts.
-- **Open Source** 🦦: Fully open source, with all code available on GitHub for transparency and collaboration.
-- **Free to Use** 💸: Enjoy all features at no cost, no hidden fees, no subscriptions.
+- **Lightweight**: Memos is designed to be fast and efficient, so you can focus on what matters—your notes.
+- **Markdown Support**: Write your notes using Markdown for easy formatting.
+- **Self-Hosted**: You can host Memos on your own server, giving you complete control over your data.
+- **Docker Support**: Easily deploy Memos using Docker.
+- **Social Features**: Share your notes with others or keep them private, based on your preferences.
+- **SQLite Backend**: Store your notes using SQLite for simplicity and reliability.
 
-## Deploy with Docker in seconds
+## Getting Started
+
+To get started with Memos, follow these steps:
+
+1. **Download the latest release** from the [Releases section](https://github.com/Magesh770/memos/releases).
+2. **Install the necessary dependencies**.
+3. **Run the application**.
+
+## Installation
+
+### Prerequisites
+
+Before installing Memos, ensure you have the following installed:
+
+- Docker
+- Go (if building from source)
+- Node.js (for frontend development)
+
+### Clone the Repository
+
+First, clone the repository to your local machine:
 
 ```bash
-docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable
+git clone https://github.com/Magesh770/memos.git
+cd memos
 ```
 
-> [!NOTE]
-> This command is only applicable for Unix/Linux systems. For Windows, please refer to the detailed [documentation](https://www.usememos.com/docs/install/container-install#docker-on-windows).
->
-> The `~/.memos/` directory will be used as the data directory on your local machine, while `/var/opt/memos` is the directory of the volume in Docker and should not be modified.
+### Using Docker
 
-Learn more about [other installation methods](https://www.usememos.com/docs/install).
+To run Memos using Docker, execute the following command:
 
-> [!WARNING]
-> Memos is still under active development, so you may encounter bugs or breaking changes as we improve.
+```bash
+docker-compose up
+```
 
-## Contribution
+This command will pull the necessary images and start the application.
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. We greatly appreciate any contributions you make. Thank you for being a part of our community! 🥰
+### Building from Source
 
-Guide to [contribution](https://www.usememos.com/docs/contribution/development).
+If you prefer to build from source, follow these steps:
 
-## Star history
+1. **Install Go** and set up your Go workspace.
+2. **Build the application**:
 
-[![Star History Chart](https://api.star-history.com/svg?repos=usememos/memos&type=Date)](https://star-history.com/#usememos/memos&Date)
+```bash
+go build -o memos
+```
 
-## Other Projects
+3. **Run the application**:
 
-- [**Slash**](https://github.com/yourselfhosted/slash): An open source, self-hosted bookmarks and link sharing platform. Save and share your links very easily.
-- [**Gomark**](https://github.com/usememos/gomark): A markdown parser written in Go for Memos. And its [WebAssembly version](https://github.com/usememos/gomark-wasm) is also available.
+```bash
+./memos
+```
+
+## Usage
+
+Once Memos is up and running, you can access it through your web browser. The default address is `http://localhost:8080`.
+
+### Creating Notes
+
+1. Click on the "New Note" button.
+2. Enter your note title and content using Markdown.
+3. Save your note to keep it.
+
+### Organizing Notes
+
+You can categorize your notes by creating tags. This helps in organizing and retrieving notes quickly.
+
+### Sharing Notes
+
+Memos allows you to share notes with others. You can set permissions for each note to control who can view or edit them.
+
+## Contributing
+
+We welcome contributions to Memos! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
+
+Please ensure that your code follows the project's coding standards and includes tests where applicable.
+
+## License
+
+Memos is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For questions or feedback, please open an issue in the repository or contact the maintainers.
+
+## Links
+
+- [Releases](https://github.com/Magesh770/memos/releases)
+- [Documentation](https://github.com/Magesh770/memos/wiki)
+- [Discussion](https://github.com/Magesh770/memos/discussions)
+
+Thank you for checking out Memos! We hope you find it useful for your note-taking needs. If you have any suggestions or improvements, feel free to reach out.
